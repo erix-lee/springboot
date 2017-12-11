@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.app.domain.User;
 import com.app.encryption.MD5;
-import com.app.repository.LigUserRepository;
+import com.app.repository.UserRepository;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -35,7 +35,7 @@ import io.jsonwebtoken.SignatureAlgorithm;
 @RequestMapping(value = "/") 
 public class HomeRestController  extends AuditLogSupport{
 	@Autowired 
-	private LigUserRepository userRepository;
+	private UserRepository userRepository;
 
 	@RequestMapping("/user")
 	public User user(Principal principal) {

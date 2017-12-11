@@ -6,7 +6,6 @@
 		<class>com.app.domain.AlarmDegreeSetting</class>
 		<class>com.app.domain.AlarmLog</class>
 		<class>com.app.domain.AuditLog</class>
-		<class>com.app.domain.Configration</class>
 		<class>com.app.domain.ConnectLog</class>
 		<class>com.app.domain.User</class>
 		<class>com.app.domain.MonitorTarget</class>

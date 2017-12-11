@@ -20,15 +20,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.app.domain.User;
 import com.app.encryption.MD5;
-import com.app.repository.LigUserRepository;
+import com.app.repository.UserRepository;
 
 @RestController
 
 @PreAuthorize("hasRole('ADMIN')")
 @RequestMapping(value = "/")
-public class LigUserRestController extends AuditLogSupport {
+public class UserRestController extends AuditLogSupport {
 	@Autowired
-	private LigUserRepository ligUserRepository;
+	private UserRepository ligUserRepository;
 
 	/**
 	 * 用户列表

@@ -18,11 +18,7 @@ public interface PersistFacade {
 	 */
 	MonitorTargetService getMonitorTargetService();
 	
-	/**
-	 * 配置服务
-	 * @return
-	 */
-	ConfigLoadSevice getConfigSevice();
+
 	
 	/**
 	 * 告警服务

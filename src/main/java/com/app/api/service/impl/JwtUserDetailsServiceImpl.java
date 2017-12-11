@@ -7,13 +7,13 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.app.domain.User;
-import com.app.repository.LigUserRepository;
+import com.app.repository.UserRepository;
 
 @Service
 public class JwtUserDetailsServiceImpl implements UserDetailsService {
 
     @Autowired
-    private LigUserRepository ligUserRepository;
+    private UserRepository ligUserRepository;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
